@@ -998,6 +998,9 @@
         <item>reboot_fastboot</item>
     </string-array>
 
+    <!-- Maximum velocity to initiate a fling, as measured in dips per second. -->
+    <dimen name="config_viewMaxFlingVelocity">12000dp</dimen>
+
     <!-- Whether doze feature is enabled by default in settings -->
     <bool name="config_doze_enabled_by_default">true</bool>
 
