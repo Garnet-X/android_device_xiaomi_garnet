@@ -31,7 +31,6 @@ prebuilt_etc {
     vendor: true,
 }
 
-
 prebuilt_etc {
     name: "ueventd-odm.rc",
     filename: "ueventd.rc",
@@ -50,5 +49,11 @@ prebuilt_etc {
     name: "init.garnet.rc",
     src: "etc/init.garnet.rc",
     sub_dir: "init",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.target.sh",
+    src: "bin/init.target.sh",
     vendor: true,
 }

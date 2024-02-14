@@ -53,6 +53,9 @@
 # Health
 /vendor/bin/hw/android\.hardware\.health-service\.xiaomi                              u:object_r:hal_health_default_exec:s0
 
+# Init
+/(vendor|system/vendor)/bin/init\.target\.sh u:object_r:vendor_qti_init_shell_exec:s0
+
 # IR
 /dev/ir_spi u:object_r:ir_spi_device:s0
 

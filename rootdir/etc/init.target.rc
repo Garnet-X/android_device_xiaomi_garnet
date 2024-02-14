@@ -164,6 +164,9 @@ on post-fs-data
     chown system system /sys/class/mi_display/disp-DSI-1/max_brightness_clone
     chmod 0664 /sys/class/mi_display/disp-DSI-1/max_brightness_clone
 
+    # Dynamically set IRQ affinity for KGSL and DRM
+    exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.target.sh
+
 on early-boot
     # Enable WLAN cold boot calibration
     write /sys/kernel/cnss/fs_ready 1
