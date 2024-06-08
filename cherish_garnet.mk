@@ -14,6 +14,9 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
 
+# Inherit from Basic Call Recorder
+$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
+
 # Inherit from the MiuiCamera setup
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-garnet/device.mk)
 
