@@ -117,7 +117,7 @@ vendor.display.enable_optimize_refresh=0
 vendor.display.idle_time=0
 
 # Dolby
-vendor.audio.dolby.ds2.enabled=true
+vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
 
 # DPM
