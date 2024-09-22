@@ -8,9 +8,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common CrDroid stuff.
+# Inherit some common PixelStar stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/pixelstar/config/common_full_phone.mk)
 
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
@@ -18,14 +18,21 @@ $(call inherit-product, device/xiaomi/garnet/device.mk)
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/xiaomi/garnet-miuicamera/products/miuicamera.mk)
 
-# CrDroid stuff
+# PixelStar stuff
+PIXELSTAR_BUILD_TYPE := official
+TARGET_USES_BLUR_RECENT := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+USE_PIXEL_CHARGER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_CARRIER_SETTINGS := true
+TARGET_SUPPORTS_CALL_RECORDING:= true
 TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_EXCLUDES_AUDIOFX := true
 
-PRODUCT_NAME := lineage_garnet
+PRODUCT_NAME := pixelstar_garnet
 PRODUCT_DEVICE := garnet
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
