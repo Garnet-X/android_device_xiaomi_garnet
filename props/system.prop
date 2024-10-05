@@ -15,6 +15,9 @@ dalvik.vm.dex2oat64.enabled=true
 # Media
 ro.mediaserver.64b.enable=true
 
+# Maintainer
+ro.genesis.maintainer=JYR_RC
+
 # QTI
 ro.vendor.qti.va_aosp.support=1
 
